@@ -2,9 +2,12 @@ pipeline{
  agent any
  stages{
    stage("demo"){
-      steps{
+    when{
+    branch 'master'
+    }
+    steps{
       echo "more coming soon ......."
-      }
+    }
    }
  }
 }
